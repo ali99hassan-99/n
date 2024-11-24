@@ -106,7 +106,7 @@ button:nth-of-type(2):active {
 
 /* تنسيق الجدول */
 table {
-    width: 60%; /* جعل عرض الجدول أصغر */
+    width: 60%;
     margin-top: 10px;
     margin-bottom: 20px;
     border-collapse: collapse;
@@ -115,20 +115,25 @@ table {
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
-    max-height: 80vh; /* تقييد ارتفاع الجدول للسماح بظهور المزيد من المحتوى */
+    max-height: 80vh;
     overflow-y: auto;
-    border: 2px solid #4CAF50; /* إضافة حدود حول الجدول */
+    border: 2px solid #4CAF50;
+}
+
+/* تصغير عرض العمود الأول */
+th:first-child, td:first-child {
+    width: 50px; /* عرض العمود الأول */
 }
 
 /* تنسيق حدود الخلايا */
 th, td {
-    padding: 8px; /* تقليل التباعد داخل الخلايا */
-    font-size: 14px; /* تصغير حجم النص */
+    padding: 8px;
+    font-size: 14px;
     text-align: center;
     vertical-align: middle;
     word-wrap: break-word;
     min-width: 100px;
-    border: 1px solid #4CAF50; /* إضافة حدود لكل خلية */
+    border: 1px solid #4CAF50;
 }
 
 /* تثبيت الصف الأول */
@@ -186,7 +191,7 @@ td:hover {
     text-decoration: none;
 }
 
-.contact-footer ul li a:hover {
+contact-footer ul li a:hover {
     color: #4CAF50;
 }
 
@@ -209,4 +214,4 @@ td:hover {
     .contact-footer {
         font-size: 14px;
     }
-    }
+}
